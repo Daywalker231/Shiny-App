@@ -22,10 +22,10 @@ lib_elections <- read.csv("lib_election_clean.csv")
 #   filter(Candidate != "Valid Votes")
 #lib_elections <- na.omit(lib_elections) # Remove 'NA' values
 
-#cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
 # Define UI for application that draws a histogram
 ui <- fluidPage(
-  theme = bs_theme(bootswatch = "quartz"),
+  theme = bs_theme(bootswatch = "quartz"), # change the theme
   titlePanel("Liberia Elections 2005 - 2017"),
   sidebarLayout(
     sidebarPanel(
@@ -55,7 +55,7 @@ server <- function(input, output, session) {
     
   })
   
-  # Filter the top 10 candidate based on the selected year
+  # Filter the top 10 candidates based on the selected year and graph
   top_candidates <- reactive({
     filtered_data() %>%
       group_by(Candidate) %>%
