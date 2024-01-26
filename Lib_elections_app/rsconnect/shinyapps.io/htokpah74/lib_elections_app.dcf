@@ -1,0 +1,12 @@
+name: lib_elections_app
+title:
+username: htokpah74
+account: htokpah74
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10932958
+bundleId: 8171749
+url: https://htokpah74.shinyapps.io/lib_elections_app/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
